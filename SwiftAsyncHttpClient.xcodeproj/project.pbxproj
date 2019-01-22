@@ -12,6 +12,8 @@
 		02EDC7FF21F5A64C00423CDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02EDC7FD21F5A64C00423CDE /* Main.storyboard */; };
 		02EDC80121F5A64F00423CDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02EDC80021F5A64F00423CDE /* Assets.xcassets */; };
 		02EDC80421F5A64F00423CDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02EDC80221F5A64F00423CDE /* LaunchScreen.storyboard */; };
+		02EDC80C21F5AA5100423CDE /* ExampleURLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EDC80B21F5AA5100423CDE /* ExampleURLRequest.swift */; };
+		7A99009A4B8D6ECC50257894 /* Pods_SwiftAsyncHttpClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F80929A71A00E55178F4751 /* Pods_SwiftAsyncHttpClient.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		02EDC80021F5A64F00423CDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02EDC80321F5A64F00423CDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02EDC80521F5A64F00423CDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02EDC80B21F5AA5100423CDE /* ExampleURLRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleURLRequest.swift; sourceTree = "<group>"; };
+		3E4AE927D11A80B4FD52402C /* Pods-SwiftAsyncHttpClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftAsyncHttpClient.debug.xcconfig"; path = "Target Support Files/Pods-SwiftAsyncHttpClient/Pods-SwiftAsyncHttpClient.debug.xcconfig"; sourceTree = "<group>"; };
+		3F80929A71A00E55178F4751 /* Pods_SwiftAsyncHttpClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftAsyncHttpClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F4625F82A5AA42F49687EE7 /* Pods-SwiftAsyncHttpClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftAsyncHttpClient.release.xcconfig"; path = "Target Support Files/Pods-SwiftAsyncHttpClient/Pods-SwiftAsyncHttpClient.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A99009A4B8D6ECC50257894 /* Pods_SwiftAsyncHttpClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				02EDC7F821F5A64C00423CDE /* SwiftAsyncHttpClient */,
 				02EDC7F721F5A64C00423CDE /* Products */,
+				46B859826B6AE43A402944AC /* Pods */,
+				1B3265CA9C66A5162609EFE2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +65,30 @@
 			children = (
 				02EDC7F921F5A64C00423CDE /* AppDelegate.swift */,
 				02EDC7FB21F5A64C00423CDE /* ViewController.swift */,
+				02EDC80B21F5AA5100423CDE /* ExampleURLRequest.swift */,
 				02EDC7FD21F5A64C00423CDE /* Main.storyboard */,
 				02EDC80021F5A64F00423CDE /* Assets.xcassets */,
 				02EDC80221F5A64F00423CDE /* LaunchScreen.storyboard */,
 				02EDC80521F5A64F00423CDE /* Info.plist */,
 			);
 			path = SwiftAsyncHttpClient;
+			sourceTree = "<group>";
+		};
+		1B3265CA9C66A5162609EFE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F80929A71A00E55178F4751 /* Pods_SwiftAsyncHttpClient.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		46B859826B6AE43A402944AC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E4AE927D11A80B4FD52402C /* Pods-SwiftAsyncHttpClient.debug.xcconfig */,
+				9F4625F82A5AA42F49687EE7 /* Pods-SwiftAsyncHttpClient.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02EDC80821F5A64F00423CDE /* Build configuration list for PBXNativeTarget "SwiftAsyncHttpClient" */;
 			buildPhases = (
+				D9F48ACB877639A28D336E85 /* [CP] Check Pods Manifest.lock */,
 				02EDC7F221F5A64C00423CDE /* Sources */,
 				02EDC7F321F5A64C00423CDE /* Frameworks */,
 				02EDC7F421F5A64C00423CDE /* Resources */,
+				D3A0985E657592B66F924122 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,6 +159,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D3A0985E657592B66F924122 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftAsyncHttpClient/Pods-SwiftAsyncHttpClient-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftAsyncSocket/SwiftAsyncSocket.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftAsyncSocket.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftAsyncHttpClient/Pods-SwiftAsyncHttpClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9F48ACB877639A28D336E85 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftAsyncHttpClient-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		02EDC7F221F5A64C00423CDE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -137,6 +213,7 @@
 			files = (
 				02EDC7FC21F5A64C00423CDE /* ViewController.swift in Sources */,
 				02EDC7FA21F5A64C00423CDE /* AppDelegate.swift in Sources */,
+				02EDC80C21F5AA5100423CDE /* ExampleURLRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +357,7 @@
 		};
 		02EDC80921F5A64F00423CDE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E4AE927D11A80B4FD52402C /* Pods-SwiftAsyncHttpClient.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +376,7 @@
 		};
 		02EDC80A21F5A64F00423CDE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F4625F82A5AA42F49687EE7 /* Pods-SwiftAsyncHttpClient.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
